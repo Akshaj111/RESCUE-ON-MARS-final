@@ -188,6 +188,13 @@ function draw (){
                 dustStorm.isVisible = false;
                 ds2.isVisible = false;
                 door.isVisible = false;
+                wall1.isVisible = false;
+                wall2.isVisible = false;
+                wall3.isVisible = false;
+                wall4.isVisible = false;
+                wall5.isVisible = false;
+                wall6.isVisible = false;
+                wall7.isVisible = false;
                 fill("cyan");
                 textSize(45);
                 text("GAME OVER!",displayWidth/2,displayHeight/2);
@@ -195,9 +202,19 @@ function draw (){
             if(neil.isTouching(door)&&buzz.isTouching(door)){
                 neil.isVisible = false;
                 buzz.isVisible = false;
+                dustStorm.velocityY = 0;
                 dustStorm.isVisible = false;
+                ds2.velocityY = 0;
                 ds2.isVisible = false;
+                door.velocityX = 0;
                 door.isVisible = false;
+                wall1.isVisible = false;
+                wall2.isVisible = false;
+                wall3.isVisible = false;
+                wall4.isVisible = false;
+                wall5.isVisible = false;
+                wall6.isVisible = false;
+                wall7.isVisible = false;
                 fill("cyan");
                 textSize(45);
                 text("YOU WIN! \n YOUR TEAMWORK AND LOGIC SKILLS HAVE MADE NEIL AND BUZZ PROUD!",displayWidth/2-300,displayHeight/2);
